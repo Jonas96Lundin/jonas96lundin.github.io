@@ -217,7 +217,7 @@ section {
 
 @media only screen and (min-width: 1050px) {
   .hero {
-    height: 90vh;
+    height: 60vh;
   }
   .parent {
     display: block;
@@ -330,6 +330,12 @@ section {
   }
 }
 
+@media only screen and (min-width: 1450px) {
+  .hero {
+    height: 70vh;
+  }
+}
+
 @media only screen and (min-width: 1550px) {
   header {
     padding: 2.5em 2em 2em 20em;
@@ -342,6 +348,12 @@ section {
   }
   .hero .content {
     padding: 9em 20em 6em 20em;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .hero {
+    height: 80vh;
   }
 }
 
