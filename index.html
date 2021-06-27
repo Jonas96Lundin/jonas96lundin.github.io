@@ -15,9 +15,9 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">My work</a></li>
-                    <li><a href="#">My skills</a></li>
-                    <li><a href="#">Hire me</a></li>
+                    <li><a href="#work">My work</a></li>
+                    <li><a href="#skills">My skills</a></li>
+                    <li><a href="mailto:jonas96lundin@hotmail.com">Hire me</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,9 +31,12 @@
 
     <div class="hero">
         <div class="content">
-            <h1 class="stagger1">Games and design</h1>
+            <h1 class="stagger1">Welcome!</h1>
             <div class="meet stagger1">
-                <p>Meet Jonas Lundin</p>
+                <!--"I'm "
+                <span class="name">Jonas Lundin</span> == $0
+                ", a game development student that prefer to focus on design and user experience."-->
+                <p>I'm <strong>Jonas Lundin</strong>, a game development student that likes to focus on design and UI/UX.</p>
             </div>
             <svg class="scroll stagger1" width="53" height="89" viewBox="0 0 53 89" fill="none">
                 <rect x="2.5" y="2.5" width="48" height="84" rx="24" stroke="#0C056D" stroke-width="5"/>
@@ -171,11 +174,11 @@
 
     <section class="featured">
         <div class="left">
-            <div class="inner transition2">
+            <div class="inner transition2" id="skills">
                 <p class="subtitle">Featured Project</p>
-                <a href="#" class="featured-title">DiscoCube - puzzle game</a>
+                <a href="#" class="featured-title">DiscoCube</a>
 
-                <p class="featured-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, velit.</p>
+                <p class="featured-desc">A puzzle game I made together with four other students at MAU. The goal is to reach the hole with the correct color facing upwards. In this project I did a little bit of everything but my main focus was the UI/UX and some graphical designing.</p>
             </div>
         </div>
         <img class="right transition2" src="images\project_1.png" alt="Featured Project">
@@ -189,33 +192,33 @@
                         <img src="images\unity-logo.png" alt="Unity Icon">
                     </div>
                     <p class="skill-title">Unity</p>
-                    <p class="featured-desc skill-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, quia.</p>
+                    <p class="featured-desc skill-desc">I have mostly used Unity when developing games so I have most experience with that game engine.</p>
                 </li>
                 <li class="transition2">
                     <div class="icon-container two">
                         <img src="images\c_sharp-logo.png" alt="C# Icon">
                     </div>
                     <p class="skill-title">C#</p>
-                    <p class="featured-desc skill-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, quia.</p>
+                    <p class="featured-desc skill-desc">Almost all of my projects are written in C# and the majority of the courses I've taken at MAU has been using C#.</p>
                 </li>
                 <li class="transition2">
                     <div class="icon-container three">
                         <img src="images\cpp-logo.png" alt="C++ Icon">
                     </div>
                     <p class="skill-title">C++</p>
-                    <p class="featured-desc skill-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, quia.</p>
+                    <p class="featured-desc skill-desc">I have studied multiple courses in C++, although I haven't used it in any projects.</p>
                 </li>
             </ul>
         </div>
     </section>
 
     <section class="porfolio">
-        <div class="portfolio-container transition3">
+        <div class="portfolio-container transition3" id="work">
             <div class="portfolio-left">
                 <div class="inner">
                     <p class="subtitle">Puzzle Platformer</p>
                     <p class="featured-title">Flip</p>
-                    <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis.</p>
+                    <p class="featured-desc">A puzzle platformer game that I created together with three other students from MAU in Unity. The core mechanic is to flip the gravity to complete the levels. All assets are made by ourselves and my main focus was leveldesign, 3D-modeling and post process effects.</p>
                 </div>
             </div>
             <a href="#"><img src="images\project_2.png" alt="Flip"></a>
@@ -225,7 +228,7 @@
                 <div class="inner">
                     <p class="subtitle">Game Jam</p>
                     <p class="featured-title">Kessler Syndrome</p>
-                    <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis.</p>
+                    <p class="featured-desc">This game was done on a Game Jam during a weekend in Unity. The goal is to collect as much garbage as possible and return in to the garbage truck/ship. I spent most of the time making the UI and fixing an Audio Manager.</p>
                 </div>
             </div>
             <a href="#"><img src="images\project_3.png" alt="Kessler Syndrome"></a>
@@ -235,7 +238,7 @@
                 <div class="inner">
                     <p class="subtitle">AI</p>
                     <p class="featured-title">3D-Pacman with FSM & BT</p>
-                    <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis.</p>
+                    <p class="featured-desc">This is a small demo of a 3D Pacman game with ghosts that uses either a Finite State Machine or a Behaviour Tree to chase Pacman. It is created in Unity.</p>
                 </div>
             </div>
             <a href="#"><img src="images\project_4.png" alt="Flip"></a>
@@ -247,61 +250,78 @@
 
     <script>
         gsap.registerPlugin(ScrollTrigger);
+        gsap.ticker.fps(-1);
         var tl = gsap.timeline();
 
-        tl.from('.content', {
-            y: '-30%',
-            opacity: 0,
-            duration: 2,
-            ease: Power4.easeOut
-        })
-        tl.from('.stagger1', {
-            opacity: 0,
-            y: -50,
-            stagger: .3,
-            ease: Power4.easeOut,
-            duration: 2
-        }, "-=1.5")
-        /*tl.from('.hero-design', {
-            opacity: 0, 
-            y: 50,
-            ease: Power4.easeOut,
-            duration: 1
-        }, "-=2")*/
-        gsap.from(".hero-design", {
-            stagger: 0.2,
-            scale: 0.1,
-            duration: 2,
-            ease: Back.easeOut.config(1.7)
-        })
-        gsap.from(".square-anim", {
-            stagger: 0.2,
-            scale: 0.1,
-            duration: 1,
-            ease: Back.easeOut.config(1.7)
-        })
+        // wait until DOM is ready
+        document.addEventListener("DOMContentLoaded", function(event) {
 
-        gsap.from(".transition2", {
-            scrollTrigger: {
-                trigger: '.transition2',
-                start: "top center"
-            },
-            y:50,
-            opacity: 0,
-            duration: 1.2,
-            stagger: .5
-        })
+            // wait until window is loaded - meaning all images, style-sheets, and assets
+            window.onload = function() {
 
-        gsap.from(".transition3", {
-            scrollTrigger: {
-                trigger: '.transition3',
-                start: "top center"
-            },
-            y:50,
-            opacity: 0,
-            duration: 1.2,
-            stagger: .6
-        })
+                // animation code goes here
+                tl.from('.content', {
+                    y: '-30%',
+                    // opacity: 0.1,
+                    autoAlpha: 0.01,
+                    duration: 2,
+                    ease: Power4.easeOut
+                })
+                tl.from('.stagger1', {
+                    //opacity: 0,
+                    autoAlpha: 0.01,
+                    y: -50,
+                    stagger: .5,
+                    ease: Power4.easeOut,
+                    duration: 2
+                }, "-=1.5")
+                /*tl.from('.hero-design', {
+                    opacity: 0, 
+                    y: 50,
+                    ease: Power4.easeOut,
+                    duration: 1
+                }, "-=2")*/
+                gsap.from(".hero-design", {
+                    force3D:false,
+                    stagger: 0.2,
+                    scale: 0.1,
+                    duration: 2,
+                    ease: Back.easeOut.config(1)
+                })
+                gsap.from(".square-anim", {
+                    force3D:false,
+                    stagger: 0.2,
+                    scale: 0.1,
+                    duration: 1,
+                    ease: Back.easeOut.config(1)
+                })
+        
+                gsap.from(".transition2", {
+                    scrollTrigger: {
+                        trigger: '.transition2',
+                        start: "top 60%"
+                    },
+                    y:50,
+                    //opacity: 0,
+                    autoAlpha: 0.01,
+                    duration: 1.2,
+                    stagger: .5
+                })
+        
+                gsap.from(".transition3", {
+                    scrollTrigger: {
+                        trigger: '.transition3',
+                        start: "top center"
+                    },
+                    y:50,
+                    //opacity: 0,
+                    autoAlpha: 0.01,
+                    duration: 1.2,
+                    stagger: .6
+                })
+
+            };
+        });
     </script>
 
 </body>

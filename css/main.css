@@ -40,6 +40,7 @@ header {
 header .logo {
   color: white;
   font-weight: bold;
+  font-size: 0.8em;
 }
 
 header ul {
@@ -51,6 +52,7 @@ header ul {
 header ul a {
   display: block;
   padding: 0 1em;
+  font-size: 0.8em;
 }
 
 .social-header, .hero-design, .parent {
@@ -65,14 +67,18 @@ header ul a {
   padding: 4em;
 }
 
+.hero h1 {
+  font-weight: normal;
+}
+
 .meet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 160px;
-  font-weight: bold;
+  width: 450px;
   color: #F25D9C;
+  font-size: 1.5em;
 }
 
 .scroll {
@@ -171,6 +177,15 @@ section {
 .portfolio-container a img {
   border-radius: 1em;
   margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 500px) {
+  header .logo {
+    font-size: 1em;
+  }
+  header ul a {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (min-width: 800px) {
