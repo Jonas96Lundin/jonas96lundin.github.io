@@ -19,7 +19,7 @@ a{
     text-decoration: none;
 }
 img{
-    width: 100%;
+    width: 70%;
 }
 
 .nav-container{
@@ -292,9 +292,9 @@ section{
 
     .hero-design{
         display: unset;
-        margin-left: -0%;
+        margin-left: 0%;
         margin-top: 0%;
-        width: 100%;
+        width: 70%;
     }
 
     .porfolio img{
@@ -303,32 +303,32 @@ section{
     }
 
     .parent {
-        margin-left: -70%;
-        margin-top: 15%;
+        margin-left: -50%;
+        margin-top: 20%;
         position: relative;
         top: 0;
         left: 0;
-      }
-      .hero-parent {
-        position: relative;
-        top: 0;
-        left: 0;
-      }
-      .hero-1 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-      }
-      .hero-2 {
+    }
+    .hero-parent {
         position: absolute;
         top: 0;
         left: 0;
-      }
-      .hero-3 {
+    }
+    .hero-1 {
         position: absolute;
-        top: 0px;
-        left: 0px;
-      }
+        top: 0;
+        left: 0em;
+    }
+    .hero-2 {
+        position: absolute;
+        top: 0;
+        left: 0em;
+    }
+    .hero-3 {
+        position: absolute;
+        top: 0;
+        left: 0em;
+    }
 
 }
 
@@ -346,10 +346,16 @@ section{
     .hero .content{
         padding: 6em 8em 6em 10em;
     }
+    .parent{
+        margin-top: 15%;
+    }
 }
 @media only screen and (min-width: 1450px){
     .hero{
         height: 70vh;
+    }
+    .parent{
+        margin-top: 10%;
     }
 }
 @media only screen and (min-width: 1550px){
