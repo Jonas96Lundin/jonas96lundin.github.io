@@ -68,7 +68,7 @@ header ul a {
   display: -ms-grid;
   display: grid;
   text-align: center;
-  padding: 4em;
+  padding: 3em;
 }
 
 .hero h1 {
@@ -183,6 +183,10 @@ section {
   margin-bottom: 2em;
 }
 
+/**.portfolio-container img{
+    border-radius: 1em;
+    margin-bottom: 2em;
+}**/
 @media only screen and (min-width: 500px) {
   header .logo {
     font-size: 1em;
@@ -259,6 +263,7 @@ section {
   }
   .social-header {
     padding: 2em 8em 2em 0;
+    background-color: white;
   }
   section {
     padding: 4em;
@@ -273,11 +278,11 @@ section {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 6em;
+    width: 7em;
     float: right;
   }
   .social-header ul img {
-    width: 30px;
+    width: 40px;
   }
   .hero {
     display: -ms-grid;

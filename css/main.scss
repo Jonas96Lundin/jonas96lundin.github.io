@@ -62,7 +62,7 @@ header{
     color: black;
     display: grid;
     text-align: center;
-    padding: 4em;
+    padding: 3em;
     h1{
         font-weight: normal;
     }
@@ -169,6 +169,10 @@ section{
     border-radius: 1em;
     margin-bottom: 2em;
 }
+/**.portfolio-container img{
+    border-radius: 1em;
+    margin-bottom: 2em;
+}**/
 @media only screen and (min-width: 500px){
     header{
         .logo{
@@ -251,6 +255,7 @@ section{
     }
     .social-header{
         padding: 2em 8em 2em 0;
+        background-color: white;//#590D82;
     }
     section{
         padding: 4em;
@@ -262,11 +267,10 @@ section{
         ul{
             display: flex;
             justify-content: space-between;
-            width: 6em;
+            width: 7em;
             float: right;
-
             img{
-                width: 30px;
+                width: 40px;
             }
         }
     }
