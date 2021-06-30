@@ -71,7 +71,7 @@ header{
 .meet{
     display: flex;
     margin: 0 auto;
-    width: 450px;
+    width: 250px;
     //font-weight: bold;
     color: #F25D9C;
     font-size: 1.5em;
@@ -225,6 +225,9 @@ section{
     .featured img{
         margin-left: 4em;
     }
+    .meet{
+        width: 450px;
+    }
 }
 
 @media only screen and (min-width: 1050px){
@@ -288,6 +291,7 @@ section{
 
     .meet{
         margin: unset;
+        width: 450px;
     }
 
     .hero-design{
