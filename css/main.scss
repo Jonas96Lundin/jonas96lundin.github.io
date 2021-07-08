@@ -24,7 +24,6 @@ img{
 
 .nav-container{
     background: #590D82;
-
     a{
         color: white;//#F7F3E9;
     }
@@ -88,20 +87,10 @@ section{
 }
 
 .featured{
-    background: #F25D9C;
+    //background: #F25D9C;
+    background-image: linear-gradient(to bottom right, #F25D9C, #b86ae2);
     position: relative;
 }
-/*.featured::before{
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #A3D2CA;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}*/
 
 .subtitle{
     text-transform: uppercase;
@@ -126,20 +115,25 @@ section{
     line-height: 1.8em;
     font-weight: 500;
 }
+.itch{
+    display: none;
+}
 
 .skills{
     background: #0C056D;
+    //background-image: linear-gradient(to bottom, #0C056D, #b86ae2);
 }
 
 .skills-container ul li{
-    background: white;
+    //background: white;
+    background-image: linear-gradient(to bottom right, white, #ebc8fd, #b86ae2);
     padding: 2em;
     border-radius: 1em;
     margin-bottom: 1em;
 
     .icon-container{
-        height: 100px;
-        display: grid;
+        //height: 60px;
+        //display: grid;
         place-content: center;
         margin: 0 auto;
         &.one{
@@ -169,10 +163,13 @@ section{
     border-radius: 1em;
     margin-bottom: 2em;
 }
-/**.portfolio-container img{
-    border-radius: 1em;
-    margin-bottom: 2em;
-}**/
+
+footer{
+    width: 100%;
+    background: #590D82;
+    padding: 60px 0px;
+}
+
 @media only screen and (min-width: 500px){
     header{
         .logo{
@@ -185,6 +182,15 @@ section{
             }
         }
         
+    }
+}
+@media only screen and (min-width: 650px){
+    .itch{
+        display: block;
+        margin: 0 auto;
+    }
+    .itch_small{
+        display: none;
     }
 }
 @media only screen and (min-width: 800px){
@@ -227,7 +233,12 @@ section{
     }
 
     .featured img{
-        margin-left: 4em;
+        margin-left: 8em;
+    }
+    .itch{
+        margin-top: 1em;
+        grid-column: 1;
+        grid-row: 2;
     }
     .meet{
         width: 450px;
@@ -247,7 +258,8 @@ section{
         background: unset;
 
         header{
-            background: #590D82;//#5EAAA8;
+            background: #590D82;
+            //background-image: linear-gradient(to right, #590D82, white);
         }
     }
     header{
@@ -336,6 +348,10 @@ section{
         position: absolute;
         top: 0;
         left: 0em;
+    }
+    .itch{
+        grid-column: 1;
+        grid-row: 2;
     }
 
 }

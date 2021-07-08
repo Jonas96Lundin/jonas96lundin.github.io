@@ -96,21 +96,11 @@ section {
 }
 
 .featured {
-  background: #F25D9C;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#F25D9C), to(#b86ae2));
+  background-image: linear-gradient(to bottom right, #F25D9C, #b86ae2);
   position: relative;
 }
 
-/*.featured::before{
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #A3D2CA;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}*/
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
@@ -135,21 +125,23 @@ section {
   font-weight: 500;
 }
 
+.itch {
+  display: none;
+}
+
 .skills {
   background: #0C056D;
 }
 
 .skills-container ul li {
-  background: white;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(white), color-stop(#ebc8fd), to(#b86ae2));
+  background-image: linear-gradient(to bottom right, white, #ebc8fd, #b86ae2);
   padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
 }
 
 .skills-container ul li .icon-container {
-  height: 100px;
-  display: -ms-grid;
-  display: grid;
   place-content: center;
   margin: 0 auto;
 }
@@ -183,16 +175,28 @@ section {
   margin-bottom: 2em;
 }
 
-/**.portfolio-container img{
-    border-radius: 1em;
-    margin-bottom: 2em;
-}**/
+footer {
+  width: 100%;
+  background: #590D82;
+  padding: 60px 0px;
+}
+
 @media only screen and (min-width: 500px) {
   header .logo {
     font-size: 1em;
   }
   header ul a {
     font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .itch {
+    display: block;
+    margin: 0 auto;
+  }
+  .itch_small {
+    display: none;
   }
 }
 
@@ -234,7 +238,14 @@ section {
     margin-left: 4em;
   }
   .featured img {
-    margin-left: 4em;
+    margin-left: 8em;
+  }
+  .itch {
+    margin-top: 1em;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
   }
   .meet {
     width: 450px;
@@ -340,6 +351,12 @@ section {
     position: absolute;
     top: 0;
     left: 0em;
+  }
+  .itch {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
   }
 }
 
