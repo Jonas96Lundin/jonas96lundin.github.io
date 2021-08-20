@@ -253,9 +253,6 @@ footer {
 }
 
 @media only screen and (min-width: 1050px) {
-  .hero {
-    height: 60vh;
-  }
   .parent {
     display: block;
   }
@@ -300,7 +297,6 @@ footer {
     display: grid;
     -ms-grid-columns: 66% auto;
         grid-template-columns: 66% auto;
-    background: unset;
     padding: 0;
   }
   .hero .content {
@@ -379,9 +375,6 @@ footer {
 }
 
 @media only screen and (min-width: 1450px) {
-  .hero {
-    height: 70vh;
-  }
   .parent {
     margin-top: 10%;
   }
@@ -399,12 +392,6 @@ footer {
   }
   .hero .content {
     padding: 9em 20em 6em 20em;
-  }
-}
-
-@media only screen and (min-width: 1650px) {
-  .hero {
-    height: 80vh;
   }
 }
 
