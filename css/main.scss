@@ -95,7 +95,8 @@ section{
 .subtitle{
     text-transform: uppercase;
     font-weight: bold;
-    color: #B61AAE;
+    //color: #B61AAE;
+    color: #590D82;
     letter-spacing: .2em;
     font-size: .85em;
 }
@@ -229,6 +230,7 @@ footer{
         padding-top: 7em;
     }
     .portfolio-container img{
+        margin-top: 4em;
         margin-left: 4em;
     }
 
