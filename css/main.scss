@@ -164,6 +164,9 @@ section{
     border-radius: 1em;
     margin-bottom: 2em;
 }
+.github-link{
+    display: none;
+}
 
 footer{
     width: 100%;
@@ -245,6 +248,14 @@ footer{
     .meet{
         width: 450px;
     }
+    .portfolio-left{
+        cursor: url('/images/magnet_magnus.png'), auto;
+      }
+    .github-link{
+        display:block;
+        margin-top: -4em;
+        width: 60px;
+    }
 }
 
 @media only screen and (min-width: 1050px){
@@ -253,7 +264,7 @@ footer{
     }
     .nav-container{
         display: grid;
-        grid-template-columns: 66% auto;
+        grid-template-columns: 85% auto;
         background: unset;
 
         header{
@@ -265,7 +276,7 @@ footer{
         padding: 2.5em 2em 2em 4em;
     }
     .social-header{
-        padding: 2em 8em 2em 0;
+        padding: 2em 2em 2em 0;
         background-color: white;//#590D82;
     }
     section{
@@ -277,7 +288,7 @@ footer{
 
         ul{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             width: 7em;
             float: right;
             img{
@@ -359,7 +370,7 @@ footer{
         padding: 2.5em 2em 2em 10em;
     }
     .social-header{
-        padding: 2em 10em 2em 0;
+        padding: 2em 2em 2em 0;
     }
     section{
         padding: 10em 10em 4em 10em;
@@ -382,7 +393,7 @@ footer{
         padding: 2.5em 2em 2em 20em;
     }
     .social-header{
-        padding: 2em 20em 2em 0;
+        padding: 2em 5em 2em 0;
     }
     section{
         padding: 6em 20em 4em 20em;
